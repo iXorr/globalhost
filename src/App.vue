@@ -1,47 +1,87 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+    export default {
+        name: 'App',
+
+        data() {
+            return {
+                userData: {
+                    name: 'John',
+                    surname: 'Smith'
+                },
+
+                imgData: {
+                    path: '/src/assets/img/pepe.jpg',
+                    alt: 'pepe'
+                }
+            }
+        },
+
+        methods: {
+        },
+
+        computed: {
+            // здесь хранятся только свойства (даже полученные из функций)
+        }
+    }
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div className="main-block">
+        <img :src="imgData.path" :alt="imgData.alt">
+        <input type="text" placeholder="Введите сообщение">
+        <button>Нажми</button>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
+    .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 350px;
+        margin: 75px;
+        background: lightcyan;
+        border-radius: 25px;
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+        box-shadow: 0 10px 0 lightsteelblue;
+    }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+    .main-block * {
+        margin-bottom: 15px;
+        color: darkslateblue;
+    }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+    .main-block input {
+        outline: none;
+        padding: 5px 10px;
+        border: 1px solid steelblue;
+        border-radius: 5px;
+    }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+    .main-block img {
+        width: 125px;
+        height: 125px;
+        border-radius: 25px;
+        border: 1.5px solid darkslateblue;
+    }
+
+    .main-block a {
+        text-decoration: none;
+    }
+
+    .main-block button {
+        background: lightsteelblue;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 10px 20px;
+        box-shadow: 0 5px 0 darkslateblue;
+        transition: 0.15s ease;
+    }
+
+    .main-block button:active {
+        box-shadow: 0 0 0;
+        translate: 0 5px;
+    }
 </style>
