@@ -4,6 +4,9 @@
 
         data() {
             return {
+                message: "darova",
+                altMessage: "uh, suka!",
+
                 userData: {
                     name: 'John',
                     surname: 'Smith'
@@ -12,11 +15,18 @@
                 imgData: {
                     path: '/src/assets/img/pepe.jpg',
                     alt: 'pepe'
-                }
+                },
+
+                specialUrl: 'https://jsonplaceholder.typicode.com/users',
+
+                urlRes: null
             }
         },
 
         methods: {
+            alertBtnClick: function() {
+                alert('you clicked INDEED btn!');
+            }
         },
 
         computed: {
@@ -25,11 +35,13 @@
     }
 </script>
 
-<template>
-    <div className="main-block">
+<template @click="alertClick">
+    <div className="main-block" @scroll.passive="handleScroll">
         <img :src="imgData.path" :alt="imgData.alt">
-        <input type="text" placeholder="Введите сообщение">
-        <button>Нажми</button>
+        <!-- <input type="text" placeholder="Введите сообщение"> -->
+        <button @click.once="alertBtnClick">Нажми</button>
+        <p v-if="message == 'darova'">{{ message }}</p>
+        <p v-else>{{ altMessage }}</p>
     </div>
 </template>
 
@@ -46,6 +58,14 @@
         border-radius: 25px;
 
         box-shadow: 0 10px 0 lightsteelblue;
+    }
+
+    .main-block input[type="submit"] {
+        transition: .5s ease-in-out
+    }
+
+    .main-block input[type="submit"]:hover {
+        transform: scale(1.1)
     }
 
     .main-block * {
