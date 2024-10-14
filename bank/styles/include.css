@@ -1,0 +1,137 @@
+.bank-header {
+    position: relative;
+}
+
+.header__nav {
+    font-size: 18px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav>* {
+    display: inherit;
+}
+
+.nav__upper {
+    display: inherit;
+    align-items: center;
+
+    position: relative;
+
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+    padding: 15px 45px;
+}
+
+.nav__upper-item {
+    display: inherit;
+    align-items: inherit;
+}
+
+.nav__upper-link {
+    display: inherit;
+    align-items: inherit;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.nav__upper-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+}
+
+.nav__upper-switch {
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.65;
+    }
+
+    &:last-of-type {
+        margin-left: 25px;
+    }
+}
+
+.nav__lower {
+    display: inherit;
+    justify-content: space-between;
+    padding: 25px 45px;
+}
+
+.nav__lower-item {
+    transition: all 0.25s ease-in-out;
+}
+
+.nav__lower-link {
+    display: flex;
+    align-items: center;
+
+    transition: inherit;
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.nav__lower-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.bank-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+    padding: 70px 45px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgb(109, 162, 94), rgb(84, 146, 139));
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer__links-wrapper {
+    display: flex;
+}
+
+.footer__links-list {
+    margin-right: 50px;
+}
+
+.footer__link {
+    margin-bottom: 10px;
+}
+
+.footer__link>* {
+    color: #fff;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer__link> :hover {
+    opacity: 0.5;
+}
+
+.footer__contacts-wrapper {
+    display: block;
+}
+
+.footer__contacts {
+    text-align: right;
+}
+
+.footer__contacts>* {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,133 @@
+.mortgage-main {
+    /* margin: 45px 270px; */
+    margin: 45px 0;
+}
+
+    .miniature {
+        margin: 25px auto;
+        width: 90%;
+    }
+
+        .miniature__header {
+            font-size: 28px;
+        }
+
+        .miniature__content-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .miniature__content {
+                width: 100%;
+                height: 175px;
+                border-radius: 25px;
+                background: #ececec;
+                margin-top: 25px;
+            }
+
+    .catalog {
+        margin: 30px 0 60px 0;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+        .catalog > * {
+            margin: 30px 0;
+        }
+
+        .offer {
+            display: flex;
+            align-items: center;
+            padding-left: 65px;
+        }
+
+        /* .offer-reverse {
+            padding-left: 0;
+        } */
+
+            .offer__icon {
+                width: 200px;
+                height: 200px;
+                margin-right: 35px;
+                border-radius: 100%;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                    /* box-shadow: 0 1px 10px #eee, 0 1px 15px #aaa; */
+                }
+            }
+
+            /* .offer__icon-reverse {
+                transform: scaleX(-1);
+            } */
+
+            /* .offer__content {
+
+            } */
+
+                .offer__content > * {
+                    margin: 10px 0;
+                }
+
+                .offer__header {
+                    font-size: 22px;
+                }
+
+                .offer__descr {
+                    width: 250px;
+                }
+
+                .offer__table {
+                    padding: 15px 0;
+                }
+
+                    .offer__table td,
+                    .offer__table th {
+                        padding: 2.5px 25px 2.5px 10px;
+                    }
+
+                .offer__btns-wrapper {
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .offer__btns-wrapper > * {
+                        cursor: pointer;
+                    }
+                
+                    .offer__submit {
+                        background: #5eb745;
+                        font-size: 16px;
+                        color: #fff;
+                        padding: 10px 15px;
+                        border: none;
+                        border-radius: 15px;
+                        margin-right: 40px;
+
+                        transition: all 0.5s ease-in-out;
+
+                        &:hover {
+                            text-shadow: 0 0 2.5px #fff;
+                            background: green;
+                        }
+                    }
+
+                    .offer__more-wrapper {
+                        display: none;
+                        /* display: flex; */
+                        align-items: center;
+                    }
+
+                        /* .offer__more-text {
+
+                        } */
+
+                        .offer__more-icon {
+                            margin-left: 10px;
+                            height: 15px;
+                        }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк РПБ</title>
+    <link rel="stylesheet" href="../styles/basic.css">
+    <link rel="stylesheet" href="../styles/include.css">
+    <link rel="stylesheet" href="../styles/for-pages/transactions.css">
+</head>
+
+<body>
+
+    <header class="bank-header">
+
+        <nav class="header__nav">
+            <ul class="nav__upper">
+                <li class="nav__upper-item">
+                    <a href="index.html" class="nav__upper-link">
+                        <img class="nav__upper-logo" src="../assets/img/for-includes/header/logo.svg" alt="header-logo">
+
+                        <p class="nav__upper-naming">ПАО «Российский предпринимательский банк»</p>
+                    </a>
+                </li>
+
+                <li class="nav__upper-item">
+                    <p class="nav__upper-switch">Переводы</p>
+                    <a class="nav__upper-switch" href="index.html">На главную</a>
+                </li>
+            </ul>
+
+            <ul class="nav__lower" style="border-bottom: 1px solid black;">
+                <li class="nav__lower-item">
+                    <a href="mortgage.html" class="nav__lower-link">
+                        <img src="../assets/img/for-includes/header/icon-mortgage.svg" alt="item1"
+                            class="nav__lower-icon">
+                        <p class="nav__lower-text">Ипотека</p>
+                    </a>
+                </li>
+
+                <li class="nav__lower-item">
+                    <a href="cards.html" class="nav__lower-link">
+                        <img src="../assets/img/for-includes/header/icon-cards.svg" alt="item2" class="nav__lower-icon">
+                        <p class="nav__lower-text">Карты</p>
+                    </a>
+                </li>
+
+                <li class="nav__lower-item">
+                    <a href="investments.html" class="nav__lower-link">
+                        <img src="../assets/img/for-includes/header/icon-investments.svg" alt="item3"
+                            class="nav__lower-icon">
+                        <p class="nav__lower-text">Инвестиции</p>
+                    </a>
+                </li>
+
+                <li class="nav__lower-item">
+                    <div href="support.html" class="nav__lower-link">
+                        <img src="../assets/img/for-includes/header/icon-support.svg" alt="item5"
+                            class="nav__lower-icon">
+                        <p class="nav__lower-text">Поддержка</p>
+                    </div>
+                </li>
+
+                <li class="nav__lower-item">
+                    <div href="insurance.html" class="nav__lower-link">
+                        <img src="../assets/img/for-includes/header/icon-insurance.svg" alt="item6"
+                            class="nav__lower-icon">
+                        <p class="nav__lower-text">Страхование</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="trans-main">
+        <article class="miniature">
+            <h1 class="miniature__header">Переводы по России</h1>
+            <p class="miniature__descr">Узнайте, какой способ перевода вам больше подходит по удобству и размеру разовых
+                комиссий</p>
+
+            <img src="../assets/img/for-pages/transactions/miniature-teaser.png" alt="img" class="miniature__img">
+            <img src="../assets/img/for-pages/transactions/miniature-teaser-woman.png" alt="img"
+                class="miniature__img miniature__img-woman">
+        </article>
+
+        <article class="menu">
+            <form class="menu-form">
+                <div class="menu-list">
+                    <label for="tranTel" class="menu-item">
+                        <div class="menu-item__icon">
+                            <img src="../assets/img/for-pages/transactions/menu-tel-icon.svg" alt="icon"
+                                class="menu-item__icon-path">
+                        </div>
+
+                        <p class="menu-item__text">По телефону</p>
+                        <input type="checkbox" id="tranTel" class="menu-item__thumb">
+                    </label>
+
+                    <label for="tranBill" class="menu-item">
+                        <div class="menu-item__icon">
+                            <img src="../assets/img/for-pages/transactions/menu-bill-icon.svg" alt="icon"
+                                class="menu-item__icon-path">
+                        </div>
+
+                        <p class="menu-item__text">По номеру счёта</p>
+
+                        <input type="checkbox" id="tranBill" class="menu-item__thumb">
+                    </label>
+
+                    <label for="tranCard" class="menu-item">
+                        <div class="menu-item__icon">
+                            <img src="../assets/img/for-pages/transactions/menu-card-icon.svg" alt="icon"
+                                class="menu-item__icon-path">
+                        </div>
+
+                        <p class="menu-item__text">По номеру карты</p>
+
+                        <input type="checkbox" id="tranCard" class="menu-item__thumb">
+                    </label>
+                </div>
+            </form>
+
+            <div class="menu-selector">
+                <div class="selector__list-wrapper">
+                    <p class="selector__sign">Способ перевода</p>
+
+                    <div class="dropdown">
+                        <div class="dropdown__background"></div>
+
+                        <button class="dropdown__btn">В мобильном приложении</button>
+
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="office">В офисе банка</li>
+                            <li class="dropdown__list-item" data-value="website">На веб-сайте</li>
+                            <li class="dropdown__list-item" data-value="terminal">В банкомате</li>
+                        </ul>
+
+                        <input type="text" value="" class="dropdown__input-hidden" disabled>
+                    </div>
+                </div>
+
+                <div class="selector__inputs">
+                    <input type="submit" value="Отправить" class="selector__submit">
+                    <input type="reset" value="Сбросить" class="selector__reset">
+                </div>
+            </div>
+
+        </article>
+
+        <article class="side-menu" onmouseover="this.classList.add('shaking')"
+            onanimationend="this.classList.remove('shaking')">
+            <h1 class="side-menu__text">Переводите себе на РПБ до 30 млн. ₽ в месяц без комиссии</h1>
+            <p class="side-menu__subtext">Отправляйте деньги со счетов РПБ в другие банках</p>
+            <img src="../assets/img/for-pages/transactions/small-banner.png" alt="icon" class="side-menu__img">
+        </article>
+
+        <!-- <article class="more">
+            <h1 class="more__header">Полезно знать</h1>
+
+            <div class="more__items-list">
+                <div class="more__item">
+                    <img src="../assets/img/for-pages/transactions/small-banner.png" alt="icon" class="more__item-icon">
+                    <p class="more__item-text">Переводы за рубеж</p>
+                </div>
+
+                <div class="more__item">
+                    <img src="../assets/img/for-pages/transactions/small-banner.png" alt="icon" class="more__item-icon">
+                    <p class="more__item-text">Автопереводы себе</p>
+                </div>
+
+                <div class="more__item">
+                    <img src="../assets/img/for-pages/transactions/small-banner.png" alt="icon" class="more__item-icon">
+                    <p class="more__item-text">Погашение кредитов других банков</p>
+                </div>
+            </div>
+        </article> -->
+    </main>
+
+    <footer class="bank-footer">
+        <div class="footer__links-wrapper">
+            <ul class="footer__links-list">
+                <li class="footer__link"><a href="#">Мобильное приложение</a></li>
+                <li class="footer__link"><a href="#">Малому бизнесу и ИП</a></li>
+                <li class="footer__link"><a href="#">Офисы и банкоматы</a></li>
+                <li class="footer__link"><a href="#">Клиентские льготы</a></li>
+            </ul>
+
+            <ul class="footer__links-list">
+                <li class="footer__link"><a href="#">Последние новости</a></li>
+                <li class="footer__link"><a href="#">Связаться с банком</a></li>
+                <li class="footer__link"><a href="#">Информация о банке</a></li>
+                <li class="footer__link"><a href="#">Доступные вакансии</a></li>
+            </ul>
+
+            <ul class="footer__links-list">
+                <li class="footer__link"><a href="#">Курсы валют</a></li>
+                <li class="footer__link"><a href="#">Государственные программы</a></li>
+                <li class="footer__link"><a href="#">Политика обработки данных</a></li>
+                <li class="footer__link"><a href="#">Подписка на услуги</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__contacts-wrapper">
+            <ul class="footer__contacts">
+                <li>Горячая линия: +7 (800) 710-70-20</li>
+                <li>г. Москва, 121043, ул. Дзержинского, 19</li>
+                <li>© 2021—2024 ПАО «РПБ»</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script/transactions.js"></script>
+</body>
+
+</html>

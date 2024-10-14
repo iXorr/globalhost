@@ -1,0 +1,65 @@
+.invests-main {
+    margin: 45px auto 75px auto;
+}
+
+    .params-wrapper {
+        width: 90%;
+        height: 650px;
+        margin: auto;
+    }
+
+        .params__header {
+            margin-bottom: 35px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .params__set {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 35px;
+        }
+
+            .param-card {
+                display: flex;
+                flex-direction: column;
+
+                height: 285px;
+                width: 275px;
+
+                border-radius: 15px;
+                box-shadow: 0 0 5px #b4b4b4;
+
+                cursor: pointer;
+
+                padding: 10px 20px;
+
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0 0 10px #666;
+                }
+            }
+
+                .param-card > * {
+                    margin-bottom: 10px;
+                }
+
+                .param-card__icon {
+                    width: 135px;
+                    height: 135px;
+                }
+
+                .param-card__header {
+                    font-size: 16px;
+                }
+
+                .param-card__sign {
+                    font-size: 12px;
+                    color: #878b90;
+                }
+
+                .param-card__descr {
+                    font-size: 14px;
+                }
