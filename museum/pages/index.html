@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей истории ЕКБ</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <header class="museum-header">
+        <div class="header__branding">
+            <img src="../img/header/museum-logo.svg" alt="header logo" class="header__branding-logo">
+            <p class="header__branding-name">МУЗЕЙ ИСТОРИИ ЕКАТЕРИНБУРГА</p>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="nav__static-items-wrapper">
+                <li class="nav__static-item"><button class="nav__static-btn" id="about">О МУЗЕЕ</button></li>
+                <li class="nav__static-item"><button class="nav__static-btn" id="to-visitors">ПОСЕТИТЕЛЯМ</button></li>
+                <li class="nav__static-item"><button class="nav__static-btn" id="services">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</button></li>
+                <li class="nav__static-item"><button class="nav__static-btn" id="projects">ПРОЕКТЫ МУЗЕЯ</button></li>
+                <li class="nav__static-item"><button class="nav__static-btn" id="merchandise">СУВЕНИРНАЯ ЛАВКА</button></li>
+            </ul>
+
+            <ul class="nav__dropdown-menu">
+                <ul class="nav__dropdown-items-wrapper" id="about">
+                    <a href="./about.html"><li class="nav__dropdown-item">История</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Уставные документы</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Наш состав</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Контакты и график работы</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Коллекции</li></a>
+                </ul>
+
+                <ul class="nav__dropdown-items-wrapper" id="to-visitors">
+                    <a href="#"><li class="nav__dropdown-item">Выставки</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Условия посещения</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Детские групповые занятия</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Экскурсии по экспозициям</li></a>
+                </ul>
+
+                <ul class="nav__dropdown-items-wrapper" id="services">
+                    <a href="#"><li class="nav__dropdown-item">Организация мероприятий</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Археологические исследования</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Корпоративные программы</li></a>
+                </ul>
+
+                <ul class="nav__dropdown-items-wrapper" id="projects">
+                    <a href="#"><li class="nav__dropdown-item">Для детей и взрослых</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Архивные</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Эксклюзивные материалы</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Татищевская библиотека</li></a>
+                </ul>
+
+                <ul class="nav__dropdown-items-wrapper" id="merchandise">
+                    <a href="#"><li class="nav__dropdown-item">Путеводители</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Народные книги</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Канцелярские товары и декор</li></a>
+                    <a href="#"><li class="nav__dropdown-item">Одежда и аксессуары</li></a>
+                </ul>
+            </ul>
+        </nav>
+
+        <button class="header__contacts">ПОЗВОНИТЬ НАМ</button>
+    </header>
+
+    <main class="museum-main">
+        <article class="museum-miniature">
+            <section class="miniature__preface">
+                <h1 class="miniature__preface-header">Наш музей предлагает</h1>
+
+                <ul class="miniature__preface-list">
+                    <li>исторические экскурсии</li>
+                    <li>проведение мероприятий</li>
+                    <li>культурные выставки</li>
+                </ul>
+
+                <p class="miniature__preface-more">Подробнее ></p>
+            </section>
+
+            <section class="miniature__photos">
+                <img src="../img/miniature/preface-1.png" alt="nature image" class="miniature__photo">
+            </section>
+        </article>
+
+        <article class="museum-poster">
+            <h1 class="poster__header">Афиша ближайших мероприятий</h1>
+
+            <div class="poster__events-wrapper">
+                <div class="poster__switches">
+                    <img src="../img/poster/switch.svg" alt="left switch" class="poster__left-switch">
+                    <img src="../img/poster/switch.svg" alt="right switch" class="poster__right-switch">
+                </div>
+
+                <section class="poster__event">
+                    <h1 class="poster__event-header">ДЕТСКАЯ КВЕСТ-ВЫСТАВКА</h1>
+                    <a href="#"><img src="../img/poster/preview-1.png" alt="event preview" class="poster__event-preview"></a>
+
+                    <form action="#purchase1" class="poster__event-info">
+                        <p class="poster__event-price">СТОИМОСТЬ БИЛЕТА: 300 ₽</p>
+                        <input class="poster__event-date" type="submit" value="09.04.2025" style="cursor: pointer;" name="event-date">
+                    </form>
+                </section>
+
+                <section class="poster__event">
+                    <h1 class="poster__event-header">НАУКА В БОЛЬШОМ ГОРОДЕ</h1>
+                    <a href="#"><img src="../img/poster/preview-2.png" alt="event preview" class="poster__event-preview"></a>
+
+                    <form action="#purchase2" class="poster__event-info">
+                        <p class="poster__event-price">СТОИМОСТЬ БИЛЕТА: 800 ₽</p>
+                        <input class="poster__event-date" type="submit" value="15.04.2025" style="cursor: pointer;"
+                        name="event-date">
+                    </form>
+                </section>
+
+                <section class="poster__event">
+                    <h1 class="poster__event-header">ВЫСОКОЕ ИСКУССТВО ЧАЕПИТИЯ</h1>
+                    <a href="#"><img src="../img/poster/preview-3.png" alt="event preview" class="poster__event-preview" name="event-date"></a>
+
+                    <form action="#purchase3" class="poster__event-info">
+                        <p class="poster__event-price">СТОИМОСТЬ БИЛЕТА: 500 ₽</p>
+                        <input class="poster__event-date" type="submit" value="17.04.2025" style="cursor: pointer;" name="event-date">
+                    </form>
+                </section>
+            </div>
+        </article>
+
+        <article class="museum-news">
+            <h1 class="news__header">Последние новости и объявления</h1>
+
+            <div class="news__items-wrapper">
+                <div class="news__switches">
+                    <img src="../img/news/arrow.svg" alt="left switch" class="news__upper-switch">
+                    <img src="../img/news/arrow.svg" alt="right switch" class="news__lower-switch">
+                </div>
+
+                <div class="news__item" id="news__item-1">
+                    <a href="#"><img src="../img/news/item-1.png" alt="news #1" class="news__item-preview"></a>
+
+                    <div class="news__item-text">
+                        <h1 class="news__item-header">Оздоровительный флешмоб</h1>
+                        <p class="news__item-content">Марафон здорового образа жизни пройдёт с 1 по 11 апреля 2025</p>
+                    </div>
+                </div>
+
+                <div class="news__item" id="news__item-2">
+                    <a href="#"><img src="../img/news/item-2.png" alt="news #2" class="news__item-preview"></a>
+
+                    <div class="news__item-text">
+                        <h1 class="news__item-header">Приходите на субботник</h1>
+                        <p class="news__item-content">1 апреля в сквере на ул. Титова будет <br> общественная уборка территории</p>
+                    </div>
+                </div>
+
+                <div class="news__item" id="news__item-3">
+                    <a href="#"><img src="../img/news/item-3.png" alt="news #3" class="news__item-preview"></a>
+
+                    <div class="news__item-text">
+                        <h1 class="news__item-header">Меняй город к лучшему</h1>
+                        <p class="news__item-content">Участвуй в онлайн-голосовании <br> за понравившиеся парки</p>
+                    </div>
+                </div>
+
+                <div class="news__item" id="news__item-4">
+                    <a href="#"><img src="../img/news/item-4.png" alt="news #4" class="news__item-preview"></a>
+
+                    <div class="news__item-text">
+                        <h1 class="news__item-header">Продолжение съёмок</h1>
+                        <p class="news__item-content">Бригада, снимающая фильм про <br> Бажова, задержится ещё на неделю</p>
+                    </div>
+                </div>
+
+                <div class="news__item" id="news__item-5">
+                    <a href="#"><img src="../img/news/item-5.png" alt="news #5" class="news__item-preview"></a>
+
+                    <div class="news__item-text">
+                        <h1 class="news__item-header">Смена графика работы</h1>
+                        <p class="news__item-content">В период 25-31 марта музей будет открыт с 10:00 до 18:00</p>
+                    </div>
+                </div>
+
+                <div class="news__item" id="news__item-6">
+                    <a href="#"><img src="../img/news/item-6.png" alt="news #6" class="news__item-preview"></a>
+
+                    <div class="news__item-text">
+                        <h1 class="news__item-header">Дятловская выставка</h1>
+                        <p class="news__item-content">Для посетителей открылась выставка в <br> честь погибшей группы И. Дятлова</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="museum-footer">
+        <div class="footer__trademarks">
+            <div class="footer__branding">
+                <img src="../img/footer/museum-logo.svg" alt="" class="footer__branding-logo">
+                <h1 class="footer__branding-name">МУЗЕЙ ИСТОРИИ <br> ЕКАТЕРИНБУРГА</h1>
+            </div>
+
+            <ul class="footer__socials">
+                <li class="footer__socials-item"><a href="#"><img class="footer__socials-item-preview" src="../img/footer/vk-logo.svg" alt="vk-icon"></a></li>
+                <li class="footer__socials-item"><a href="#"><img class="footer__socials-item-preview" src="../img/footer/tg-logo.svg" alt="tg-icon"></a></li>
+                <li class="footer__socials-item"><a href="#"><img class="footer__socials-item-preview" src="../img/footer/wa-logo.svg" alt="wa-icon"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__materials-wrapper">
+            <ul class="footer__materials-column">
+                <li class="footer__material-item">
+                    <h1 class="footer__material-header">ОФИЦИАЛЬНАЯ ИНФОРМАЦИЯ</h1>
+                </li>
+
+                <li class="footer__material-item"><a href="#">Сведения об учреждении</a></li>
+                <li class="footer__material-item"><a href="#">Уставные документы</a></li>
+                <li class="footer__material-item"><a href="#">Независимая оценка качества</a></li>
+                <li class="footer__material-item"><a href="#">Аудитория музея</a></li>
+            </ul>
+
+            <ul class="footer__materials-column">
+                <li class="footer__material-item">
+                    <h1 class="footer__material-header">ОТ УЧРЕДИТЕЛЯ</h1>
+                </li>
+
+                <li class="footer__material-item"><a href="#">Сайт Управления культуры</a></li>
+                <li class="footer__material-item"><a href="#">Электронный муниципалитет</a></li>
+                <li class="footer__material-item"><a href="#">Антикоррупционная политика</a></li>
+                <li class="footer__material-item"><a href="#">Профилатика терроризма</a></li>
+            </ul>
+
+            <ul class="footer__materials-column">
+                <li class="footer__material-item">
+                    <h1 class="footer__material-header">ПАРТНЁРЫ</h1>
+                </li>
+
+                <li class="footer__material-item"><a href="#">СМИ</a></li>
+                <li class="footer__material-item"><a href="#">Английская версия сайта - <br> агенство переводов «Транслит»
+                </a></li>
+                <li class="footer__material-item"><a href="#">Чат-бот «Навигатор музея <br> истории Екатеринбурга»
+                </a></li>
+            </ul>
+
+            <ul class="footer__materials-column">
+                <li class="footer__material-item">
+                    <h1 class="footer__material-header">ПОДПИСКА</h1>
+                </li>
+
+                <li class="footer__material-item">
+                    <form>
+                        <input type="text" placeholder="Ваш E-mail">
+                        <button class="footer__submit-btn">
+                            <img src="../img/footer/arrow.svg" alt="arrow">
+                        </button>
+                    </form>
+                </li>
+
+                <li class="footer__material-item" style="font-size: 14px; margin-top: 10px;"><a href="#">Отправляя заявку, подтверждаю <br> согласие на обработку персональных <br> данных в соответствии с <span style="color: #eb6b03;">политикой <br> конфиденциальности</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script/main.js"></script>
+</body>
+</html>
